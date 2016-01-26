@@ -1,0 +1,10 @@
+- name: Install httpd
+  yum: name=httpd state=present
+
+- name: Copy httpd configuration
+  template: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
+  notify: restart httpd
+
+- name: Copy vhosts configuration
+  template: src=vhosts.conf dest=/etc/httpd/conf.d/vhosts.conf
+  notify: restart httpd

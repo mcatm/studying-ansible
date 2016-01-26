@@ -1,0 +1,13 @@
+---
+user:
+  name: ansible
+  password: test
+  password_hashed: $1$Shv4erFb$78owPB4MdwGt5nsDL9bb31
+  group: www
+
+php:
+  max_file_size: 40M
+
+mysql:
+  dbname: ansible
+  root_password: test

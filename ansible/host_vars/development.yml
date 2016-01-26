@@ -1,0 +1,7 @@
+---
+hostname: ansible.dev
+document_root: /var/www/html
+
+httpd:
+  error_log: /var/log/httpd/error_log
+  access_log: /var/log/httpd/access_log combined
